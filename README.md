@@ -51,3 +51,18 @@ The app fetches **live meteorological data** from the [Open-Meteo API](https://o
   ```python
   df['winddir_10m_sin'] = np.sin(np.radians(df['winddirection_10m']))
   df['winddir_10m_cos'] = np.cos(np.radians(df['winddirection_10m']))
+
+
+  Normalized numerical features using StandardScaler
+
+### 🤖 Model Training
+
+- Algorithm: RandomForestRegressor
+
+- Split: 80% Training / 20% Testing
+
+  Metrics:
+
+- 🧩 RMSE: 0.14 (low error)
+
+- 📈 R²: 0.76 (model explains ~76% of output variance)
